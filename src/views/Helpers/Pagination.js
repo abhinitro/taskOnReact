@@ -7,27 +7,30 @@ export default class PaginationWidget extends PureComponent {
 
    
 
-
+   /**
+    * 
+    * @param {Integer} param 
+    */
    moveReq(param){
-
-
-    if(this.props.pageNum+param > this.props.pages){
-        this.props.setPageAndPageSize(this.props.pages)
-
-    }else{
-
-        this.props.setPageAndPageSize(this.props.pageNum+param)
-
-    }
-
+    this.props.setPageAndPageSize(this.props.pageNum+param)
    }
 
+   /**
+    * @param {Integer} i it is used to move the page number 
+    * 
+    */
+    
     moveToPage=(i)=>{
-
-      
      this.props.setPageAndPageSize(i);
+   }
 
-    }
+
+   /**
+    * All the no of pages is comes from this function it contains two parameter from props
+    * pageNum it is current page number
+    * pageList it is total no of pages in current page
+    * 
+    */
 
    getPagination(){
    
@@ -60,7 +63,7 @@ export default class PaginationWidget extends PureComponent {
     return (
       <div>
           { 
-              this.props.pages > 0 ?(<div><Pagination aria-label="Page navigation example">
+              this.props.pages > 0 ?(<div className="pagination-list"><Pagination aria-label="Page navigation example">
       <PaginationItem disabled>
         </PaginationItem>
         <PaginationItem disabled={this.props.pageNum===0?true:false}>

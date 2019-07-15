@@ -73,3 +73,7 @@ button.btn.btn-default.btn.btn-secondary {
   margin: 2px;
   float: right;
 }
+
+.pagination-list {
+  margin: 16px;
+}
