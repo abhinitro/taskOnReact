@@ -11,3 +11,65 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+
+
+
+
+.task_wrapper {
+  width: 500px;
+  margin-top: 20px;
+
+}
+
+
+
+.panel {
+  width: 500px;
+  background-color: #666e77!important;
+  border-color: #666e77 !important;
+  color: white;
+  padding: .75rem 1.25rem;
+  position: absolute;
+}
+.panel-body {
+  float: left;
+}
+
+.postion_from_top.col-md-12 {
+  margin-top: 48px;
+}
+
+
+.list-view {
+  width: 500px;
+  background-color:white!important;
+  border-color: white !important;
+  color: black;
+  padding: 1.75rem 1.25rem;
+}
+
+
+.list-view.row {
+  margin-left: 0px;
+  border-style: groove;
+  margin-top: 5px;
+}
+
+.user_title {
+  font-weight: 600;
+  float: left;
+  position: relative;
+}
+.user_description {
+  top: 21px;
+  font-size: 13px;
+  position: absolute;
+}
+
+button.btn.btn-default.btn.btn-secondary {
+  height: 38px;
+  /* padding: 11px; */
+  margin: 2px;
+  float: right;
+}
